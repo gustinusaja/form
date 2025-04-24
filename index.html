@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form Pendaftaran</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+    <header>Form Pendaftaran</header>
+    <form class="form" action="#">
+        <div class="input-box">
+            <label>Nama lengkap</label>
+            <input type="text" placeholder="Masukan Nama Lengkap" required>
+        </div>
+        <div class="input-box">
+            <label>Email</label>
+            <input type="text" placeholder="Masukan Email" required>
+        </div>
+        <div class="column">
+            <div class="input-box">
+                <label>Nomor Telepon</label>
+                <input type="number" placeholder="Masukan Nomor Telepon" required>
+            </div>
+            <div class="input-box">
+                <label>Tanggal Lahir</label>
+                <input type="date" placeholder="Masukan Tanggal Lahir" required>
+            </div>
+
+        </div>
+        <div class="gender">
+            <h3>Jenis Kelamin</h3>
+            <div class="gender-option">
+                <div class="gdr">
+                    <input type="radio" id="pria" name="gender" checked>
+                    <label for="pria">Pria</label>
+                </div>
+                <div class="gdr">
+                    <input type="radio" id="wanita" name="gender" checked>
+                    <label for="wanita">Wanita</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-box address">
+            <label>Alamat</label>
+            <input type="text" placeholder="Masukan Nama Jalan/Gang" required>
+            <input type="text" placeholder="Masukan Nama Desa" required>
+            <div class="column">
+                <div class="select-box">
+                    <select>
+                        <option hidden>Kabupaten/kota</option>
+                        <option>Brebes</option>
+                        <option>Batu Licin</option>
+                        <option>Kotabaru</option>
+                        <option>Megasari</option>
+                        <option>Gunung Sari</option>
+                    </select>
+
+                </div>
+                <input type="text" placeholder="Masukan Nama Kecamatan" required>
+ 
+
+            </div>
+            <div class="column">
+                <input type="text" placeholder="Masukan Nama Desa" required>
+                <input type="number" placeholder="Masukan Kode Pos" required>
+
+            </div>
+
+        </div>
+        <button>Daftar</button>
+    </form>
+    </section>
+</body>
+</html>
